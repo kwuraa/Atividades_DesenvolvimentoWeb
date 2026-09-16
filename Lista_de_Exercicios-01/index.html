@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Calculo de AUMENTO SALÁRIAL -->
+      <section class="calculoAumento">
+        <div class="inputsContainer">
+          <label for="salarioBase"> Salario: </label>
+          <input type="text" name="salarioBase" id="salarioBase" />
+
+          <label for="percentualAumento"> Percentual: </label>
+          <input type="text" name="percentualAumento" id="percentualAumento" />
+        </div>
+
+        <p id="salarioReajustado" class="salario"></p>
+
+        <button onclick="CalcularAumento()">Calcular</button>
+      </section>
+
+      <!-- Calculo ÁREA DO TRIANGULO -->
+      <section class="calcAreaTriangulo">
+        <div class="inputsContainer">
+          <label for="baseTriangulo"> Base do Triangulo</label>
+          <input type="text" name="baseTriangulo" id="baseTriangulo" />
+
+          <label for="alturaTriangulo"> Altura do Triangulo</label>
+          <input type="text" name="alturaTriangulo" id="alturaTriangulo" />
+
+          <label for="areaTriangulo">Area do Triangulo</label>
+          <input type="text" name="areaTriangulo" id="areaTriangulo" disabled />
+        </div>
+
+        <button onclick="CalcularAreaTriangulo()">Calcular</button>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
