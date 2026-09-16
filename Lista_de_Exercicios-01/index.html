@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Projeto</title>
+    <title>> ATIVIDADE - Projeto_JS</title>
   </head>
   <body>
     <div class="container">
       <!-- Calculo de AUMENTO SALÁRIAL -->
-      <section class="calculoAumento">
+      <section class="calcContainer">
         <div class="inputsContainer">
           <label for="salarioBase"> Salario: </label>
           <input type="text" name="salarioBase" id="salarioBase" />
@@ -18,13 +18,15 @@
           <input type="text" name="percentualAumento" id="percentualAumento" />
         </div>
 
-        <p id="salarioReajustado" class="salario"></p>
+        <div class="resposta">
+          <p id="salarioReajustado" class="salario"></p>
+        </div>
 
         <button onclick="CalcularAumento()">Calcular</button>
       </section>
 
       <!-- Calculo ÁREA DO TRIANGULO -->
-      <section class="calcAreaTriangulo">
+      <section class="calcContainer">
         <div class="inputsContainer">
           <label for="baseTriangulo"> Base do Triangulo</label>
           <input type="text" name="baseTriangulo" id="baseTriangulo" />
@@ -33,10 +35,31 @@
           <input type="text" name="alturaTriangulo" id="alturaTriangulo" />
 
           <label for="areaTriangulo">Area do Triangulo</label>
-          <input type="text" name="areaTriangulo" id="areaTriangulo" disabled />
+          <input
+            type="text"
+            name="areaTriangulo"
+            id="areaTriangulo"
+            readonly
+            placeholder="0 M²"
+          />
         </div>
 
         <button onclick="CalcularAreaTriangulo()">Calcular</button>
+      </section>
+
+      <!-- Calculo de MÉDIA PONDERADA -->
+      <section class="calcContainer">
+        <div class="inputsContainer">
+          <label for="nota1">Insira sua nota da primeira atividade</label>
+          <input type="text" name="nota1" id="nota1" min="0" max="10" />
+
+          <label for="nota2">Insira sua nota da segunda atividade</label>
+          <input type="text" name="nota2" id="nota2" min="0" max="10" />
+        </div>
+
+        <div class="resposta"><label id="resultado"></label></div>
+
+        <button onclick="CalcularMedia()">Calcular</button>
       </section>
     </div>
 

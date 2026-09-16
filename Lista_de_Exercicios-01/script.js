@@ -11,4 +11,23 @@ function CalcularAumento() {
   resultadoSalario.textContent = `O seu salario foi reajustado para R$ ${salarioReajustado}`;
 }
 
-function CalcularAreaTriangulo() {}
+const alturaTriangulo = document.getElementById("alturaTriangulo");
+const baseTriangulo = document.getElementById("baseTriangulo");
+const resultArea = document.getElementById("areaTriangulo");
+
+function CalcularAreaTriangulo() {
+  const resultado =
+    (Number(baseTriangulo.value) * Number(alturaTriangulo.value)) / 2;
+
+  resultArea.value = `${resultado.toFixed(2)} M²`;
+}
+
+const nota1 = document.getElementById("nota1");
+const nota2 = document.getElementById("nota2");
+const resultadoLabel = document.getElementById("resultado");
+
+function CalcularMedia() {
+  const media = Number(nota1.value) * 0.3 + Number(nota2.value) * 0.7;
+
+  resultadoLabel.innerHTML = `Sua média foi ${media}`;
+}
