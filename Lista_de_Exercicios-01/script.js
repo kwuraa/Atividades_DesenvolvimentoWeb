@@ -3,12 +3,20 @@ const percentualAumento = document.getElementById("percentualAumento");
 const resultadoSalario = document.getElementById("salarioReajustado");
 
 function CalcularAumento() {
-  const valorReajuste =
-    Number(salarioBase.value) * (Number(percentualAumento.value) / 100);
+  if (
+    !salarioBase.value ||
+    !percentualAumento.value ||
+    Number(percentualAumento.value) === 0
+  ) {
+    resultadoSalario.textContent = "Informe valores Válidos !!!";
+  } else {
+    const valorReajuste =
+      Number(salarioBase.value) * (Number(percentualAumento.value) / 100);
 
-  const salarioReajustado = Number(salarioBase.value) + valorReajuste;
+    const salarioReajustado = Number(salarioBase.value) + valorReajuste;
 
-  resultadoSalario.textContent = `O seu salario foi reajustado para R$ ${salarioReajustado}`;
+    resultadoSalario.textContent = `O seu salario foi reajustado para R$ ${salarioReajustado.toFixed(2)}`;
+  }
 }
 
 const alturaTriangulo = document.getElementById("alturaTriangulo");
