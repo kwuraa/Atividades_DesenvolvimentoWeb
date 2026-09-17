@@ -7,62 +7,146 @@
     <title>> ATIVIDADE - Projeto_JS</title>
   </head>
   <body>
-    <div class="container">
-      <!-- Calculo de AUMENTO SALÁRIAL -->
-      <section class="calcContainer">
-        <div class="inputsContainer">
-          <label for="salarioBase"> Salario: </label>
-          <input type="text" name="salarioBase" id="salarioBase" />
+    <header class="page-header">
+      <h1>Lista de Exercícios</h1>
+      <p class="author-name">Matheus Morais Kawamura</p>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Calculo de AUMENTO SALÁRIAL -->
+        <section class="calcContainer">
+          <h2>Aumento Salarial</h2>
+          <div class="inputsContainer">
+            <label for="salarioBase"> Salario: </label>
+            <input type="text" name="salarioBase" id="salarioBase" />
 
-          <label for="percentualAumento"> Percentual: </label>
-          <input type="text" name="percentualAumento" id="percentualAumento" />
-        </div>
+            <label for="percentualAumento"> Percentual: </label>
+            <input
+              type="text"
+              name="percentualAumento"
+              id="percentualAumento"
+            />
+          </div>
 
-        <div class="resposta">
-          <p id="salarioReajustado" class="salario"></p>
-        </div>
+          <div class="resposta">
+            <p id="salarioReajustado" class="salario"></p>
+          </div>
 
-        <button onclick="CalcularAumento()">Calcular</button>
-      </section>
+          <button onclick="CalcularAumento()">Calcular</button>
+        </section>
 
-      <!-- Calculo ÁREA DO TRIANGULO -->
-      <section class="calcContainer">
-        <div class="inputsContainer">
-          <label for="baseTriangulo"> Base do Triangulo</label>
-          <input type="text" name="baseTriangulo" id="baseTriangulo" />
+        <!-- Calculo ÁREA DO TRIANGULO -->
+        <section class="calcContainer">
+          <h2>Área do Triângulo</h2>
+          <div class="inputsContainer">
+            <label for="baseTriangulo"> Base do Triangulo</label>
+            <input type="text" name="baseTriangulo" id="baseTriangulo" />
 
-          <label for="alturaTriangulo"> Altura do Triangulo</label>
-          <input type="text" name="alturaTriangulo" id="alturaTriangulo" />
+            <label for="alturaTriangulo"> Altura do Triangulo</label>
+            <input type="text" name="alturaTriangulo" id="alturaTriangulo" />
 
-          <label for="areaTriangulo">Area do Triangulo</label>
-          <input
-            type="text"
-            name="areaTriangulo"
-            id="areaTriangulo"
-            readonly
-            placeholder="0 M²"
-          />
-        </div>
+            <label for="areaTriangulo">Area do Triangulo</label>
+            <input
+              type="text"
+              name="areaTriangulo"
+              id="areaTriangulo"
+              readonly
+              placeholder="0 M²"
+            />
+          </div>
 
-        <button onclick="CalcularAreaTriangulo()">Calcular</button>
-      </section>
+          <button onclick="CalcularAreaTriangulo()">Calcular</button>
+        </section>
 
-      <!-- Calculo de MÉDIA PONDERADA -->
-      <section class="calcContainer">
-        <div class="inputsContainer">
-          <label for="nota1">Insira sua nota da primeira atividade</label>
-          <input type="text" name="nota1" id="nota1" min="0" max="10" />
+        <!-- Calculo de MÉDIA PONDERADA -->
+        <section class="calcContainer">
+          <h2>Média Ponderada</h2>
+          <div class="inputsContainer">
+            <label for="nota1">Insira sua nota da primeira atividade</label>
+            <input type="text" name="nota1" id="nota1" min="0" max="10" />
 
-          <label for="nota2">Insira sua nota da segunda atividade</label>
-          <input type="text" name="nota2" id="nota2" min="0" max="10" />
-        </div>
+            <label for="nota2">Insira sua nota da segunda atividade</label>
+            <input type="text" name="nota2" id="nota2" min="0" max="10" />
+          </div>
 
-        <div class="resposta"><label id="resultado"></label></div>
+          <div class="resposta"><label id="resultado"></label></div>
 
-        <button onclick="CalcularMedia()">Calcular</button>
-      </section>
-    </div>
+          <button onclick="CalcularMedia()">Calcular</button>
+        </section>
 
+        <!-- Calculo de idade -->
+        <section class="calcContainer">
+          <h2>Tempo de Vida</h2>
+          <div class="inputsContainer">
+            <label for="anoNasc">Insira um ano de nascimento: </label>
+            <input type="text" name="anoNasc" id="anoNasc" />
+          </div>
+
+          <div class="resposta">
+            O resultado do calculo esta no console(F12)
+          </div>
+
+          <button onclick="CalcTempoDeVida()">Calcular</button>
+        </section>
+
+        <!-- Calculo CONSUMO MÉDIO DO AUTOMOVEL  -->
+        <section class="calcContainer">
+          <h2>Consumo Médio</h2>
+          <div class="inputsContainer">
+            <label for="distanciaKM">Insira a distancia em KM: </label>
+            <input type="text" name="distanciaKM" id="distanciaKM" />
+
+            <label for="combustivel">Infome o volume do combustível:</label>
+            <input type="text" name="combustivel" id="combustivel" />
+          </div>
+
+          <div class="resposta"><span id="consumoMedio"></span></div>
+          <button onclick="CalcConsumoMedio()">Calcular</button>
+        </section>
+
+        <!-- Calculo FOLHA DE PAGAMENTO -->
+        <section class="calcContainer holerite">
+          <h2>Folha de Pagamento</h2>
+          <div class="inputsContainer">
+            <label for="valorHora">Quantos Reais você recebe por Hora ?</label>
+            <input type="text" name="valorHora" id="valorHora" />
+
+            <label for="horasTrabalhadas"
+              >Quantas horas foram trabalhadas ?</label
+            >
+            <input
+              type="text"
+              name="horasTrabalhadas"
+              id="horasTrabalhadas"
+              value="62"
+            />
+
+            <label for="qtsRefeicoes">Quantas refeicoes por dia ? </label>
+            <input
+              type="text"
+              name="qtsRefeicoes"
+              id="qtsRefeicoes"
+              value="1"
+            />
+          </div>
+
+          <div class="resposta"><span id="totalReceber"></span></div>
+          <button onclick="CalcFolhaDePagamento()">Calcular</button>
+        </section>
+
+        <!-- Calculo NUMERO ALEATÓRIO -->
+        <section class="calcContainer card-aleatorio">
+          <h2>Número Aleatório</h2>
+
+          <div class="displayAleatorio">
+            <span id="numAleatorio">--</span>
+            <span id="parImp">Aguardando...</span>
+          </div>
+
+          <button onclick="GerarNumero()">Gerar</button>
+        </section>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
