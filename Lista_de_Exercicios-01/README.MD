@@ -1,6 +1,6 @@
 # 🚀 Projeto_JS - Lista de Exercícios (JavaScript Básico)
 
-Repositório desenvolvido para a disciplina de **Desenvolvimento Web I** do curso Superior de **Desenvolvimento de Software Multiplataforma (DSM)** na **Fatec Votorantim**, sob a orientação da Profª Angelina V. S. Melaré[cite: 3].
+Repositório desenvolvido para a disciplina de **Desenvolvimento Web I** do curso Superior de **Desenvolvimento de Software Multiplataforma (DSM)** na **Fatec Votorantim**, sob a orientação da Profª Angelina V. S. Melaré.
 
 ---
 
@@ -11,7 +11,7 @@ Repositório desenvolvido para a disciplina de **Desenvolvimento Web I** do curs
 
 ## 📋 Descriação dos Exercícios
 
-Este projeto consiste em uma página web (`ProjetoJS`) contendo uma interface estruturada em grade (Grid) com diversos cards de exercícios focados em **entrada, processamento e saída** de dados utilizando **JavaScript**[cite: 3]:
+Este projeto consiste em uma página web (`ProjetoJS`) contendo uma interface estruturada em grade (Grid) com diversos cards de exercícios focados em **entrada, processamento e saída** de dados utilizando **JavaScript**
 
 1. **Aumento Salarial:** Recebe o salário base e o percentual de aumento de um funcionário, calculando e exibindo o novo salário reajustado.
 2. **Área do Triângulo:** Calcula a área de um triângulo a partir da base e da altura informadas, exibindo o resultado em um campo de texto somente leitura.
